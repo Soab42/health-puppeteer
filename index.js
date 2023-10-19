@@ -59,25 +59,7 @@ const loginAndGetData = async (username, password) => {
 
 (async () => {
   const resultData = {};
-  // loginCredentials = [
-  //   { username: "Azampur", password: "Azampur@010" },
-  //   { username: "Badda", password: "Badda@022" },
-  //   // { username: "Konapara", password: "Konapara@024" },
-  //   // { username: "Sabuzbag", password: "Sabuzbag@026" },
-  //   // { username: "Jatrabari", password: "Jatrabari@040" },
-  //   // { username: "Panchaboti", password: "Panchaboti@057" },
-  //   // { username: "Dakkhin khan", password: "Dakkhinkhan@063" },
-  //   // { username: "Fotulla-2", password: "Fotulla-2@073" },
-  //   // { username: "Uttara", password: "Uttara@103" },
-  //   // { username: "Postogola", password: "Postogola@069" },
-  //   // { username: "Lalbag", password: "Lalbag@044" },
-  //   // { username: "Dhanmondi", password: "Dhanmondi@020" },
-  //   // { username: "Shamoly", password: "Shamoly@053" },
-  //   // { username: "Noyabazarone", password: "Noyabazarone@012" },
-  //   // { username: "Armanitola", password: "Armanitola@014" },
-  //   // { username: "Noyabazar@125", password: "Noyabazar@125" },
-  //   // { username: "Noyabazar@090", password: "Noyabazar@090" },
-  // ];
+  
   for (const { username, password } of loginCredentials) {
     const data = await loginAndGetData(username, password);
     resultData[username] = data;
